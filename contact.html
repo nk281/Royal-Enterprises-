@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Royal Enterprises</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <a href="index.html" class="logo">Royal <span>Enterprises</span></a>
+  <nav>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="navbar-actions">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">
+      <span class="icon">🌙</span>
+    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1>Let's talk about your space.</h1>
+    <p class="lede" style="margin-top:1.2rem;">Fill in the form to continue your enquiry on WhatsApp, or reach us directly using the details alongside.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-split">
+
+    <form id="contactForm" class="reveal" data-whatsapp-number="918800126041" novalidate>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" name="phone">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="projectType">Project Type</label>
+        <select id="projectType" name="projectType">
+          <option value="residential">Residential</option>
+          <option value="commercial">Commercial</option>
+          <option value="consultation">Single Consultation</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Project Details *</label>
+        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your space, timeline and budget range."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Continue on WhatsApp</button>
+      <div class="form-msg" id="formMsg"></div>
+    </form>
+
+    <div class="reveal">
+      <div class="info-block">
+        <span class="dim">Studio</span>
+        <p style="margin-top:0.6rem;">DF-845, Dabua Pali Road, Uttam Nagar, Faridabad<br>Haryana, 121001, India</p>
+      </div>
+      <div class="info-block">
+        <span class="dim">Email</span>
+        <p style="margin-top:0.6rem;">hello@studioarc.in</p>
+      </div>
+      <div class="info-block">
+        <span class="dim">Phone</span>
+        <p style="margin-top:0.6rem;"><a href="https://wa.me/918800126041" target="_blank" rel="noopener">+91 88001 26041</a></p>
+      </div>
+      <div class="info-block">
+        <span class="dim">Studio Hours</span>
+        <p style="margin-top:0.6rem;">Mon – Sat, 10am – 7pm IST</p>
+      </div>
+      <iframe class="map-frame" title="Studio Arc location map"
+        src="https://www.google.com/maps?q=Lodhi+Colony,New+Delhi&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Royal <span style="color:var(--clay)">Enterprises</span></div>
+        <p style="font-size:0.9rem; color:var(--stone); max-width:32ch;">Interior design for homes and workplaces.</p>
+        <div class="newsletter-row">
+          <input type="email" placeholder="Your email" aria-label="Email for newsletter">
+          <button>Subscribe</button>
+        </div>
+      </div>
+      <div>
+        <h4>Navigate</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html">Residential</a></li>
+          <li><a href="services.html">Commercial</a></li>
+          <li><a href="services.html">3D Visualization</a></li>
+          <li><a href="services.html">Consultation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Pinterest</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Royal Enterprises. All rights reserved.</span>
+      <span>Haryana, India</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
